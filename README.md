@@ -13,7 +13,7 @@ Editor tools to facilitate some steps in migrating/updating to new systems
 
 # Creating a custom tool
 
-Check the [example] to see how to implement custom tools
+Check the [example](Example/ExampleMigrationTool.cs) to see how to implement custom tools
 
 ```cs
 using UnityEngine.Editor;
