@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEditor;
-using UnityEditor.SceneManagement;
-using TMPro;
 
 using Springpunk.MigrationTools.Editor;
 
