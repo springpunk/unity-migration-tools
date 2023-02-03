@@ -13,12 +13,18 @@ Editor tools to facilitate some steps in migrating/updating to new systems
 
 # How to install
 
-- Open the Unity Package Manager (Window > Package Manager)
+- Open the Unity Package Manager (`Window > Package Manager`)
 - Click the "plus" icon in the top left
 - Select "Add package from git URL"
 - Paste in the git URL for this repo: `https://github.com/springpunk/unity-migration-tools.git`
 
-# Getting the loaded scenes from the SPMT Window
+# Usag
+
+## Opening the window
+
+- `Window > Springpunk > Migration Tools`
+
+## Getting the loaded scenes from the SPMT Window
 
 ```cs
     using Springpunk.MigrationTools.Editor;
@@ -33,7 +39,7 @@ public void Foo(){
 }
 ```
 
-# Creating a custom tool
+## Creating a custom tool
 
 Check the [example](Example/ExampleMigrationTool.cs) to see how to implement custom tools
 
