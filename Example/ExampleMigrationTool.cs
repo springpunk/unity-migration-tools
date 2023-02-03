@@ -5,45 +5,48 @@ using TMPro;
 
 using Springpunk.MigrationTools.Editor;
 
-[InitializeOnLoad]
-public class ExampleMigrationTool : MigrationTool
+namespace Springpunk.MigrationTools.Example
 {
-    static ExampleMigrationTool()
+    [InitializeOnLoad]
+    public class ExampleMigrationTool : MigrationTool
     {
-        // Use this to register a custom tool
-
-        //ExampleMigrationTool example = new ExampleMigrationTool();
-        //MigrationToolsWindow.RegisterCustomTool(example);
-    }
-
-    public ExampleMigrationTool() : base("Example Migration Tool") { }
-
-    protected override void OnGUI()
-    {
-        int guess = Random.Range(0, 9);
-        GUILayout.Label("Guess the button:");
-        GUILayout.Space(10);
-        GUILayout.BeginVertical();
-
-        for (int i = 0; i < 9; i += 3)
+        static ExampleMigrationTool()
         {
-            GUILayout.BeginHorizontal();
-            for (int j = 0; j < 3; j++)
+            // Use this to register a custom tool
+
+            //ExampleMigrationTool example = new ExampleMigrationTool();
+            //MigrationToolsWindow.RegisterCustomTool(example);
+        }
+
+        public ExampleMigrationTool() : base("Example Migration Tool") { }
+
+        protected override void OnGUI()
+        {
+            int guess = Random.Range(0, 9);
+            GUILayout.Label("Guess the button:");
+            GUILayout.Space(10);
+            GUILayout.BeginVertical();
+
+            for (int i = 0; i < 9; i += 3)
             {
-                if (GUILayout.Button("Pick me"))
+                GUILayout.BeginHorizontal();
+                for (int j = 0; j < 3; j++)
                 {
-                    if (guess == i + j)
+                    if (GUILayout.Button("Pick me"))
                     {
-                        Debug.Log("You guessed correctly!");
-                    }
-                    else
-                    {
-                        Debug.Log("Better luck next time...");
+                        if (guess == i + j)
+                        {
+                            Debug.Log("You guessed correctly!");
+                        }
+                        else
+                        {
+                            Debug.Log("Better luck next time...");
+                        }
                     }
                 }
+                GUILayout.EndHorizontal();
             }
-            GUILayout.EndHorizontal();
+            GUILayout.EndVertical();
         }
-        GUILayout.EndVertical();
     }
 }
