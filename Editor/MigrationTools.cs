@@ -38,7 +38,8 @@ namespace Springpunk.MigrationTools.Editor
         [MenuItem("Window/Springpunk/Migration Tools")]
         public static void ShowWindow()
         {
-            GetWindow<MigrationTools>();
+            MigrationTools mt = GetWindow<MigrationTools>();
+            mt.titleContent = new GUIContent("Migration Tools");
         }
 
 
