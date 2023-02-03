@@ -35,7 +35,7 @@ namespace Springpunk.MigrationTools.Editor
             scenePaths = new List<string>();
         }
 
-        [MenuItem("Window/ItsPeetah/Migration Tools")]
+        [MenuItem("Window/Springpunk/Migration Tools")]
         public static void ShowWindow()
         {
             GetWindow<MigrationTools>();

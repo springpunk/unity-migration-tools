@@ -1,6 +1,6 @@
 {
     "name": "springpunk-migration-tools",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Editor tools to facilitate some of the steps of migrating/updating to a new system",
     "displayName": "Springpunk Migration Tools",
     "unity": "2021.1",
