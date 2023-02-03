@@ -50,7 +50,7 @@ namespace Springpunk.MigrationTools.Editor
         public static void ShowWindow()
         {
             MigrationToolsWindow window = GetWindow<MigrationToolsWindow>();
-            window.titleContent = new GUIContent("Migration Tools");
+            window.titleContent = new GUIContent("Springpunk Migration Tools");
             Instance = window;
         }
 
@@ -113,6 +113,7 @@ namespace Springpunk.MigrationTools.Editor
             if (CustomTools.Count < 1)
             {
                 GUILayout.Label("No custom tools available.");
+                GUILayout.Label($"Use MigrationToolsWindow.RegisterCustomTool(MigrationTool) to register one...");
                 return;
             }
 
