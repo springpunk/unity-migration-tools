@@ -29,7 +29,7 @@ public class MyCustomTool : MigrationTool
         MigrationToolsWindow.RegisterCustomTool(example);
     }
 
-    public MyCustomTool() : base("Example Migration Tool") { }
+    public MyCustomTool() : base("My Custom Tool") { }
 
     protected override void OnGUI()
     {
