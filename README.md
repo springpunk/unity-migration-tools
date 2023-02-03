@@ -27,14 +27,13 @@ Editor tools to facilitate some steps in migrating/updating to new systems
 ## Getting the loaded scenes from the SPMT Window
 
 ```cs
-    using Springpunk.MigrationTools.Editor;
+using Springpunk.MigrationTools.Editor;
 
-    public class Example {
+public class Example {
 
-public void Foo(){
-
+    public void Foo(){
         SceneLoader sceneLoader = MigrationToolsWindow.Instance.SceneLoader;
-        string[] selectedScenePaths = sceneLoader.  SelectedScenePaths
+        string[] selectedScenePaths = sceneLoader.SelectedScenePaths
     }
 }
 ```
