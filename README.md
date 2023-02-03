@@ -1,4 +1,4 @@
-# Migration Tools for Unity
+# Springpunk Migration Tools (SPMT) for Unity
 
 Editor tools to facilitate some steps in migrating/updating to new systems
 
@@ -17,6 +17,21 @@ Editor tools to facilitate some steps in migrating/updating to new systems
 - Click the "plus" icon in the top left
 - Select "Add package from git URL"
 - Paste in the git URL for this repo: `https://github.com/springpunk/unity-migration-tools.git`
+
+# Getting the loaded scenes from the SPMT Window
+
+```cs
+    using Springpunk.MigrationTools.Editor;
+
+    public class Example {
+
+public void Foo(){
+
+        SceneLoader sceneLoader = MigrationToolsWindow.Instance.SceneLoader;
+        string[] selectedScenePaths = sceneLoader.  SelectedScenePaths
+    }
+}
+```
 
 # Creating a custom tool
 
