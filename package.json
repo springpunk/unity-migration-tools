@@ -1,0 +1,13 @@
+{
+    "name": "springpunk-migration-tools",
+    "version": "0.1.0",
+    "description": "Editor tools to facilitate some of the steps of migrating/updating to a new system",
+    "displayName": "Springpunk Migration Tools",
+    "unity": "2021.1",
+    "author": {
+        "name": "Pietro Moroni",
+        "email": "pietro.g.moroni@gmail.com",
+        "url": "https://github.com/springpunk"
+    },
+    "hideInEditor": true
+}
