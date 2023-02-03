@@ -5,9 +5,11 @@
     "displayName": "Springpunk Migration Tools",
     "unity": "2021.1",
     "author": {
-        "name": "Pietro Moroni",
+        "name": "Sprinkgpunk Games",
         "email": "pietro.g.moroni@gmail.com",
         "url": "https://github.com/springpunk"
     },
-    "hideInEditor": true
+    "hideInEditor": true,
+    "documentationUrl": "https://github.com/springpunk/unity-migration-tools",
+    "changelogUrl": "https://github.com/springpunk/unity-migration-tools"
 }
