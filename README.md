@@ -43,7 +43,7 @@ public class Example {
 Check the [example](Example/ExampleMigrationTool.cs) to see how to implement custom tools
 
 ```cs
-using UnityEngine.Editor;
+using UnityEditor;
 using Springpunk.MigrationTools.Editor;
 
 [InitializeOnLoad]
