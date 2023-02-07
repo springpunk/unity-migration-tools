@@ -128,5 +128,12 @@ namespace Springpunk.MigrationTools.Editor
             if (tool == null) return;
             CustomTools.Add(tool);
         }
+
+        //public static void RegisterCustomTool<T>() where T : MigrationTool
+        //{
+        //    T tool = new();
+        //    if (tool == null) return;
+        //    CustomTools.Add(tool);
+        //}
     }
 }
