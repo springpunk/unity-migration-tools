@@ -99,7 +99,7 @@ namespace Springpunk.MigrationTools.Editor
         }
 
 
-        private void DrawLine(float height = 1, float spacing = 10f)
+        public static void DrawLine(float height = 1, float spacing = 10f)
         {
             GUILayout.Space(spacing);
             Rect rect = EditorGUILayout.GetControlRect(false, height);

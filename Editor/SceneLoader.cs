@@ -30,6 +30,7 @@ namespace Springpunk.MigrationTools.Editor
         }
 
         private bool showScenes = false;
+        private Vector2 scrollProgress = Vector2.zero;
 
         public SceneLoader() : base("Scene Loader") { }
 
@@ -57,12 +58,15 @@ namespace Springpunk.MigrationTools.Editor
                 if(GUILayout.Button("Select none"))
                     sceneLoadItems.ForEach((item) => item.select = false);
                 GUILayout.EndHorizontal();
+                scrollProgress = GUILayout.BeginScrollView(scrollProgress, GUILayout.MaxHeight(400));
                 for (int i = 0; i < sceneLoadItems.Count; i++)
                 {
                     GUILayout.BeginHorizontal("box");
                     sceneLoadItems[i].select = GUILayout.Toggle(sceneLoadItems[i].select, sceneLoadItems[i].scenePath);
                     GUILayout.EndHorizontal();
                 }
+                GUILayout.EndScrollView();
+                MigrationToolsWindow.DrawLine();
             }
             EditorGUILayout.EndFoldoutHeaderGroup();
         }
